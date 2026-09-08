@@ -109,7 +109,6 @@ export default function StaticSite() {
           <div className="border-box">
             <h3>pacman -Q (Installed Tech)</h3>
             <p>Python, C++, TypeScript, Next.js, SQL, go, React</p>
-            <img src="/osaka-osaka-simulator.gif" alt="Osaka simulator" width={250} />
           </div>
 
           <div className="border-box">
@@ -129,9 +128,6 @@ export default function StaticSite() {
           <p><em>bamvoov@cachyos ~ $ ls -la ~/projects</em></p>
 
           <div style={{ marginBottom: '20px' }}>
-            <img src="/osaka-azumanga-daioh-walter.gif" alt="Osaka Walter White" width={150} />
-            <img src="/osaka-yum.gif" alt="Osaka Yum" width={150} />
-            <img src="/osaka-azumanga-daioh.-lightning.gif" alt="Osaka Lightning" width={150} />
           </div>
 
           <table>
@@ -158,7 +154,6 @@ export default function StaticSite() {
             </tbody>
           </table>
           <br />
-          <img src="/azumanga-daiho-azumanga.gif" alt="Azumanga projects meme" width={280} />
           <p>more to come soon (hopefully)</p>
         </section>
 
