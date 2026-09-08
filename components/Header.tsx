@@ -3,7 +3,7 @@
 import { Sun, Moon } from "lucide-react";
 
 import Image from "next/image";
-
+import Link from "next/link";
 type HeaderProps = {
   theme: "light" | "dark";
   setTheme: (t: "light" | "dark") => void;
@@ -54,8 +54,8 @@ export default function Header({ theme, setTheme, activeTab, setActiveTab }: Hea
             key={link.name}
             onClick={() => setActiveTab(link.name as any)}
             className={`w-16 sm:w-20 h-7 text-center z-10 transition-colors duration-200 text-[10px] sm:text-xs font-semibold uppercase tracking-wider ${activeTab === link.name
-                ? "text-accent font-bold"
-                : "text-muted hover:text-text-color"
+              ? "text-accent font-bold"
+              : "text-muted hover:text-text-color"
               }`}
           >
             {link.name}
@@ -65,6 +65,13 @@ export default function Header({ theme, setTheme, activeTab, setActiveTab }: Hea
 
       {/* ACTIONS */}
       <div className="flex items-center gap-4">
+        <Link
+          href="/static"
+          className="px-2.5 py-1.5 rounded-sm border border-bg-3/40 bg-bg-2 text-muted hover:text-accent hover:border-accent transition-colors cursor-pointer flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider"
+          title="Static"
+        >
+          <span>html</span>
+        </Link>
         <button
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           className="px-2.5 py-1.5 rounded-sm border border-bg-3/40 bg-bg-2 text-muted hover:text-accent hover:border-accent transition-colors cursor-pointer flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider"

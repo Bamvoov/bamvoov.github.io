@@ -74,7 +74,7 @@ const Home: NextPage<any> = ({ theme, setTheme }) => {
       <Head>
         <title>Satvik Srivastava</title>
 
-        <meta name="description" content="Personal portfolio website" />
+        <meta name="description" content="me on this huge ass web" />
 
         <link rel="icon" href={`${router.basePath || ""}/Squirtle.png`} />
       </Head>
