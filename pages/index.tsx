@@ -84,7 +84,7 @@ const Home: NextPage<any> = ({ theme, setTheme }) => {
       <div className="relative overflow-hidden min-h-screen">
         <Header theme={theme} setTheme={setTheme} activeTab={activeTab} setActiveTab={handleTabChange} />
 
-        <main className="max-w-5xl mx-auto px-6 py-12 pb-12 mt-16 relative min-h-[60vh]">
+        <main className="max-w-5xl mx-auto px-6 py-12 pb-12 mt-28 sm:mt-16 relative min-h-[60vh]">
           {/* About / Home Tab */}
           <div
             className={`transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${activeTab === "about"

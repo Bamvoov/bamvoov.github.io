@@ -22,9 +22,9 @@ export default function Hero() {
           <Image
             src="/azumanga-daioh-chiyo-chan.gif"
             alt="Waving sticker"
-            width={112}
-            height={112}
-            className="object-contain rounded-sm"
+            width={104}
+            height={136}
+            className="rounded-sm"
           />
         </div>
         <h1 className="text-4xl md:text-5xl font-extrabold leading-none tracking-tight font-mono">
