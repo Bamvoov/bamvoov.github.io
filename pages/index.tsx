@@ -76,7 +76,7 @@ const Home: NextPage<any> = ({ theme, setTheme }) => {
 
         <meta name="description" content="me on this huge ass web" />
 
-        <link rel="icon" href={`${router.basePath || ""}/Squirtle.png`} />
+        <link rel="icon" href={`${router.basePath || ""}/azumanga-daioh-osaka-helmet.gif`} />
       </Head>
 
       {/* GRADIENT + VIGNETTE WRAPPER */}
