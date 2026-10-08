@@ -25,6 +25,19 @@ export default function Header({ theme, setTheme }: HeaderProps) {
         <Link href="/static" className="hover:text-text-color transition-colors">[ static ]</Link>
         <Link href="/#contact" className="hover:text-text-color transition-colors">[ contact ]</Link>
       </nav>
+
+      {/* RIGHT: Theme Toggle */}
+      <div className="flex items-center z-10">
+        {setTheme && (
+          <button
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            className="text-muted hover:text-text-color transition-colors"
+            aria-label="Toggle Dark Mode"
+          >
+            [ {theme === "dark" ? "light" : "dark"} ]
+          </button>
+        )}
+      </div>
     </header>
   );
 }
