@@ -1,6 +1,8 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { useEffect, useState } from "react";
+import Loader from "../components/Loader";
+
 function MyApp({ Component, pageProps }: AppProps) {
   const [theme, setTheme] = useState<"light" | "dark">("light");
 
@@ -13,6 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
+      <Loader />
       {/* App content */}
       <Component {...pageProps} theme={theme} setTheme={setTheme} />
     </>

@@ -10,10 +10,10 @@ export default function StaticSite() {
         <meta name="description" content="Plain HTML version of the site" />
         <style>{`
           :root {
-            --bg: #ffffff;
-            --text: #000000;
-            --link: #0000ee;
-            --border: #cccccc;
+            --bg: #000000;
+            --text: #ffffff;
+            --link: #60a5fa;
+            --border: #333333;
           }
           @media (prefers-color-scheme: dark) {
             :root {

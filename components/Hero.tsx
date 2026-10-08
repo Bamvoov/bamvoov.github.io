@@ -24,9 +24,17 @@ export default function Hero() {
         </p>
 
         {/* Large Title */}
-        <h1 className="text-6xl md:text-8xl font-extrabold leading-[0.9] tracking-tight font-mono text-text-color">
-          <span className="block">Hiiie:3</span>
-          <span className="block">I&apos;m Satvik</span>
+        <h1 className="text-7xl md:text-[8rem] font-sans font-black leading-[0.85] tracking-tighter text-[#111]">
+          <span
+            className="block text-[#ccff00] mb-1 md:mb-2"
+            style={{
+              WebkitTextStroke: "2px #111",
+              textShadow: "4px 4px 0px #111"
+            }}
+          >
+            Hiiie:3
+          </span>
+          <span className="block whitespace-nowrap">I&apos;m Satvik</span>
         </h1>
 
         {/* Bio Line */}
