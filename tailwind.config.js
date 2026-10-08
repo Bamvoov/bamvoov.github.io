@@ -19,11 +19,14 @@ module.exports = {
         'accent': 'var(--accent)',
         'accent-secondary': 'var(--accent-secondary)',
         'muted': 'var(--muted)',
-        'text-color': 'var(--text)'
+        'text-color': 'var(--text)',
+        'contact-bg': 'var(--contact-bg)',
+        'contact-text': 'var(--contact-text)',
       },
       fontFamily: {
         mono: ['"Space Mono"', 'monospace'],
         sans: ['"Inter"', 'sans-serif'],
+        display: ['"Instrument Serif"', 'serif'],
       },
       spacing: {
         '9': '2.25rem',
@@ -31,5 +34,7 @@ module.exports = {
       }
     }
   },
-  plugins: []
+  plugins: [
+    require('@tailwindcss/typography'),
+  ]
 };

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Instrument+Serif:ital@0;1&display=swap');
 
 /* --- THESE 3 LINES ARE REQUIRED FOR TAILWIND TO WORK --- */
 @tailwind base;
@@ -7,27 +7,32 @@
 /* ------------------------------------------------------- */
 
 :root {
-  --bg-1: #000000;             /* Pitch Black bg0 */
-  --bg-2: #121212;             /* Darker bg1 */
-  --bg-3: #242424;             /* Darker bg2 */
-  --accent: #FABD2F;           /* Gruvbox Dark Yellow */
-  --accent-secondary: #B8BB26; /* Gruvbox Dark Green */
-  --text: #ebdbb2;             /* Gruvbox Dark fg0 */
-  --muted: #a89984;            /* Gruvbox Dark fg4 */
+  --bg-1: #e8e4d6;             /* Warm beige bg */
+  --bg-2: #dedad0;             /* Slightly darker beige */
+  --bg-3: #c8c4b8;             /* Border/divider tone */
+  --accent: #d79921;           /* Warm Yellow */
+  --accent-secondary: #98971a; /* Olive Green */
+  --text: #2e2e2c;             /* Near-black text */
+  --muted: #7c7c74;            /* Warm gray muted */
+  --contact-bg: #282828;       /* Dark section bg */
+  --contact-text: #e8e4d6;     /* Light text on dark */
 }
 
-[data-theme="light"] {
-  --bg-1: #fbf1c7;             /* Gruvbox Light bg0 */
-  --bg-2: #ebdbb2;             /* Gruvbox Light bg1 */
-  --bg-3: #d5c4a1;             /* Gruvbox Light bg2 */
-  --accent: #b57614;           /* Gruvbox Light Yellow */
-  --accent-secondary: #79740e; /* Gruvbox Light Green */
-  --text: #282828;             /* Gruvbox Light fg0 */
-  --muted: #928374;            /* Gruvbox Light fg4 */
+[data-theme="dark"] {
+  --bg-1: #1d2021;
+  --bg-2: #282828;
+  --bg-3: #3c3836;
+  --accent: #fabd2f;
+  --accent-secondary: #b8bb26;
+  --text: #ebdbb2;
+  --muted: #a89984;
+  --contact-bg: #0d0e0f;
+  --contact-text: #ebdbb2;
 }
 
 html {
-  font-size: 110%; /* Proportionally enlarges layout and text using rem units */
+  font-size: 100%;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -106,4 +111,9 @@ a:hover {
   display: flex;
   width: max-content;
   animation: marquee 20s linear infinite;
+}
+
+/* Display / Serif heading */
+.font-display {
+  font-family: 'Instrument Serif', serif;
 }

@@ -10,12 +10,15 @@
     "test": "jest"
   },
   "dependencies": {
+    "gray-matter": "^4.0.3",
     "lucide-react": "^0.561.0",
+    "marked": "^18.1.0",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.20",
     "@testing-library/jest-dom": "latest",
     "@testing-library/react": "latest",
     "@types/jest": "latest",
